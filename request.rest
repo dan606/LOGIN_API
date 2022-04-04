@@ -1,0 +1,77 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/set/cookie
+
+###
+GET http://localhost:3000/get/loginCookie
+
+###
+GET http://localhost:3000/get/cookies
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name": "test",
+    "password": "TEST"
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name": "test2",
+    "password": "TEST2"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "name": "test",
+    "password": "TEST"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "name": "test2",
+    "password": "TEST22"
+}
+
+###
+POST http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "name": "test"
+}
+
+###
+POST http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "name": "test2"
+}
+
+###
+POST http://localhost:3000/isUnique
+Content-Type: application/json
+
+{
+    "name": "test"
+}
+
+###
+POST http://localhost:3000/isUnique
+Content-Type: application/json
+
+{
+    "name": "test1"
+}

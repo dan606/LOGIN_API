@@ -95,7 +95,7 @@ module.exports = {
         const result = await db.query(aql`FOR user IN ${usersCollection} FILTER user.name == ${req.body.name} RETURN user.password`).then(
           meta => console.log('Document updated:', meta.extra.stats),
           err => console.error('Failed to update document:', err)
-        );;
+        );
         emitter.emit('login',  req.body.name, req.body.password, result._result, res);
         //onLogin(req.body.name, req.body.password, result._result, res);
     }),

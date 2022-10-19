@@ -188,7 +188,7 @@ async function onLogin(name, password, hashes, res)
 
     if(await isUserSignedin(name))
     {
-      res.send("failed, user is already signedin");
+      res.send("failed. user is already signedin");
       return;
     }
 
